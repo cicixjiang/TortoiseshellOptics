@@ -1,0 +1,328 @@
+html{
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+/*div{
+  border: 1px solid black;
+}*/
+
+p{
+  line-height: 1.2;
+}
+
+.sitecontainer{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top{
+  width: 100%;
+  background-size: cover;
+  background-image: url("images/glasses-bg.png");
+  height: 30rem;
+}
+
+.top .sitecontainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: cadetblue;
+  margin-top: 1rem;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.logo img{
+  height: 1.5rem;
+  width: auto;
+}
+
+.navigation p{
+  color: white;
+  margin-left: 1rem;
+}
+
+.navigation nav{
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  flex-wrap: nowrap;
+}
+
+.navigation span{
+  color: white;
+  margin-right: 2rem;
+}
+
+
+.top .text{
+  display: inline block;
+  background-color: white;
+  margin-top: 10rem;
+  margin-left: auto;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+}
+
+.top h1{
+  font-weight: Bold;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  height: 8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon{
+  display: inline-block;
+  width: 5rem;
+  background-size: contain;
+  align-items: center;
+}
+
+.icon img{
+  width: 5rem;
+  margin-top: 0;
+}
+
+.icon.paper img{
+  width: 3.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.service .text{
+  text-align: center;
+}
+
+.infos.sitecontainer{
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.philosophy{
+  margin-right: 2.5%;
+  margin-left: auto;
+}
+
+.appointment{
+  margin-left: 2.5%;
+  margin-right: auto;
+}
+
+
+.info .title{
+  width: 10rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: cadetblue;
+}
+
+.info p{
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+
+.footer{
+  display: flex;
+  margin-top: 5rem;
+  background-color: azure;
+}
+
+.logo.black{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+}
+
+.logo.black p{
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sitecontainer{
+    width: 100%;
+  }
+
+  .top{
+    height: 22rem;
+  }
+
+  .navigation{
+    margin-top: 0;
+  }
+
+  .top .text{
+    display: inline block;
+    background-color: white;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  .top h1{
+    font-size: 1.33rem;
+  }
+
+}
+
+.menu{
+  display: none;
+}
+
+@media only screen and (max-width: 667px),
+only screen and (max-width: 470px) and (orientation:landscape) {
+  p{
+    font-size: 0.77rem;
+  }
+
+  .navigation p{
+    display: none;
+  }
+
+  .navigation span{
+    display: none;
+  }
+
+  .navigation .menu{
+    display: inline-block;
+  }
+
+  .top{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+
+  .top .text{
+    display: block;
+    width: 100%
+    background-color: white;
+    margin-top: 9rem;
+    padding: 1rem auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .top h1{
+    width: 100%;
+    font-size: 1rem;
+    word-break: keep-all;
+  }
+
+  .services{
+    flex-direction: column;
+    margin-top: 3.77rem;
+  }
+
+  .service{
+    display: flex;
+    width: 5rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .icon.ruler{
+    margin-top: 1.54rem;
+  }
+
+  .icon.truck{
+    margin-top: 1.54rem;
+  }
+
+  .infos.sitecontainer{
+    display: block;
+    margin-top: 0;
+  }
+
+  .info{
+    width: 100%;
+    margin-top: 3.77rem;
+  }
+
+  .info .title{
+    width: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h2{
+    margin-left: 0;
+  }
+
+  .info p{
+    margin-left: 1rem;
+  }
+
+  .philosophy{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .appointment{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer{
+    display: flex;
+    align-content: center;
+  }
+
+
+  .logo.black{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo.black p{
+    display: none;
+  }
+
+}
